@@ -11,7 +11,7 @@ cd /root/SDA_ALL/
 git reset --hard
 git pull
 #cd /root/SDA_ALL/main_oct0pus/
-
+echo $WEBHOOK_URL
 crontab -l  
 chmod +x *
 #ngrok authtoken $NGROK_TOKENS
