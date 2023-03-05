@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-clear
+#clear
 
 trap "echo oh;exit" SIGTERM SIGINT
 echo $google_main > /root/g00g
 # echo -e "nameserver 103.86.96.100\nnameserver 103.86.99.100" >  /etc/resolv.conf
 #echo "nameserver 8.8.8.8" >  /etc/resolv.conf
 #echo "nameserver 8.8.4.4" >>  /etc/resolv.conf
-
+echo $US_PS
 cd /root/SDA_ALL/
 git reset --hard
 git pull
