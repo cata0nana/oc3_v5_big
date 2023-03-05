@@ -13,7 +13,7 @@ spec:
         app: supervisord
     spec:
       containers:
-      - image: quay.io/cata0nana/oc3_v2
+      - image: quay.io/cata0nana/oc3_v5_big0_git
         name: supervisord
 
 ---
