@@ -20,7 +20,8 @@ chmod +x *
 while true
 do
 	echo "NEW ..............."
-	dbus-uuidgen > /var/lib/dbus/machine-id
+	#dbus-uuidgen > /var/lib/dbus/machine-id
 	cd /root/SDA_ALL/n_main_oct0pus/
+	echo "START"
 	timeout 60m python3 google_let.py
 done
