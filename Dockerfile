@@ -68,7 +68,7 @@ COPY xorg.conf /etc/X11/xorg.conf
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-EXPOSE 22 9001 9002
+EXPOSE 9001 9002
 
 
 # PLEASE CHANGE THAT AFTER FIRST LOGIN
