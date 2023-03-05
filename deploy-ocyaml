@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: debian-app
+  name: debian-name
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: debian-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: debian-app
+    spec:
+      securityContext:
+        privileged: true
+        runAsUser: 1007090001
+        runAsGroup: 1000
+      #   fsGroup: 2000
+      containers:
+      - image: quay.io/cata0nana/oc_v1_img
+        name: debian-name
+        ports:
+        - containerPort: 22
+        command: ["/bin/sleep", "3650d"]
+          # runAsUser: 1000
+          #allowPrivilegeEscalation: true
+          # capabilities: {}
+        # securityContext:
+        resources: {}
