@@ -23,5 +23,5 @@ do
 	#dbus-uuidgen > /var/lib/dbus/machine-id
 	cd /root/SDA_ALL/n_main_oct0pus/
 	echo "START"
-	timeout 60m python3 google_let.py
+	timeout 90m python3 google_let.py
 done
